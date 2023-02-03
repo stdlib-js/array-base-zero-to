@@ -23,6 +23,21 @@ name: publish
 on:
   # Allow the workflow to be manually run:
   workflow_dispatch:
+    # Workflow inputs:
+    inputs:
+      version:
+        description: 'Version Increment'
+        type: choice
+        default: 'none'
+        options:
+          - 'none'
+          - 'major'
+          - 'minor'
+          - 'patch'
+          - 'premajor'
+          - 'preminor'
+          - 'prepatch'
+          - 'prerelease'
 
 # Workflow jobs:
 jobs:
@@ -53,6 +68,12 @@ jobs:
         with:
           node-version: 16
         timeout-minutes: 5
+
+      # Increment package version (if requested):
+      - name: 'Increment package version (if requested)'
+        if: ${{ github.event.inputs.version != 'none' }}
+        run: |
+          npm version ${{ github.event.inputs.version }}
 
       # Replace GitHub links to individual packages with npm links:
       - name: 'Replace all GitHub links to individual packages with npm links'
