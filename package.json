@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/array-base-zero-to",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Generate a linearly spaced numeric array whose elements increment by 1 starting from zero.",
   "license": "Apache-2.0",
   "author": {
