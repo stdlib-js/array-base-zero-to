@@ -55,6 +55,7 @@ jobs:
     env:
       SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
 
     # Define the sequence of job steps...
     steps:
