@@ -70,6 +70,12 @@ jobs:
           node-version: 16
         timeout-minutes: 5
 
+      # Configure git:
+      - name: 'Configure git'
+        run: |
+          git config --local user.email "noreply@stdlib.io"
+          git config --local user.name "stdlib-bot"
+
       # Increment package version (if requested):
       - name: 'Increment package version (if requested)'
         if: ${{ github.event.inputs.version != 'none' }}
