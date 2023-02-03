@@ -98,6 +98,7 @@ jobs:
           git tag -a "v${NEW_VERSION}" -m "Release v{NEW_VERSION}"
 
           # Push changes to GitHub:
+          SLUG=${{ github.repository }}
           git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" --follow-tags
 
       # Replace GitHub links to individual packages with npm links:
