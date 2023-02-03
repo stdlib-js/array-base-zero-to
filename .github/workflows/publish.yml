@@ -62,8 +62,6 @@ jobs:
       # Checkout the repository:
       - name: 'Checkout repository'
         uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.STDLIB_BOT_GITHUB_TOKEN }}
 
       # Install Node.js:
       - name: 'Install Node.js'
@@ -100,7 +98,7 @@ jobs:
           git tag -a "v${NEW_VERSION}" -m "Release v{NEW_VERSION}"
 
           # Push changes to GitHub:
-          git push --follow-tags
+          git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$SLUG.git" --follow-tags
 
       # Replace GitHub links to individual packages with npm links:
       - name: 'Replace all GitHub links to individual packages with npm links'
