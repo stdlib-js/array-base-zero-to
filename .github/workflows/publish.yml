@@ -92,7 +92,7 @@ jobs:
           NEW_VERSION=$(node -p "require('./package.json').version")
 
           # Replace branch in README.md link definitions for badges with the new version:
-          find . -type f -name '*.md' -print0 | xargs -0 sed -Ei "s/branch=[^ ]+/branch=v${NEW_VERSION}/g"
+          find . -type f -name '*.md' -print0 | xargs -0 sed -Ei "s/branch[=:][^ ]+/branch=v${NEW_VERSION}/g"
 
           # Create a new commit and tag:
           git add package.json README.md
