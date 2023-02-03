@@ -74,8 +74,8 @@ jobs:
       - name: 'Increment package version (if requested)'
         if: ${{ github.event.inputs.version != 'none' }}
         run: |
-          # Save NPM_TOKEN to .npmrc:
-          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
+          # Save NPM_TOKEN to user's .npmrc:
+          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
 
           # Increment package version:
           npm version ${{ github.event.inputs.version }}
