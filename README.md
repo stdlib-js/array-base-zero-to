@@ -165,11 +165,11 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/array-base-zero-to.svg
 [npm-url]: https://npmjs.org/package/@stdlib/array-base-zero-to
 
-[test-image]: https://github.com/stdlib-js/array-base-zero-to/actions/workflows/test.yml/badge.svg?branch=v0.0.1
+[test-image]: https://github.com/stdlib-js/array-base-zero-to/actions/workflows/test.yml/badge.svg?branch=v0.0.2
 [test-url]: https://github.com/stdlib-js/array-base-zero-to/actions/workflows/test.yml?query=branch:v0.0.1
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/array-base-zero-to/main.svg
-[coverage-url]: https://codecov.io/github/stdlib-js/array-base-zero-to?branch=main
+[coverage-url]: https://codecov.io/github/stdlib-js/array-base-zero-to?branch=v0.0.2
 
 <!--
 
