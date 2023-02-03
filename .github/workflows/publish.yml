@@ -86,6 +86,9 @@ jobs:
           # Increment package version:
           npm version ${{ github.event.inputs.version }}
 
+          # Push changes to GitHub:
+          git push --follow-tags
+
       # Replace GitHub links to individual packages with npm links:
       - name: 'Replace all GitHub links to individual packages with npm links'
         run: |
