@@ -21,9 +21,8 @@ name: publish
 
 # Workflow triggers:
 on:
-  # Run workflow when a new tag is pushed to the repository:
-  push:
-    tags: v[0-9]+.[0-9]+.[0-9]+
+  # Allow the workflow to be manually run:
+  workflow_dispatch:
 
 # Workflow jobs:
 jobs:
