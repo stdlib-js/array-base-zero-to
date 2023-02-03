@@ -54,6 +54,7 @@ jobs:
     # Define environment variables:
     env:
       SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
     # Define the sequence of job steps...
     steps:
@@ -73,6 +74,10 @@ jobs:
       - name: 'Increment package version (if requested)'
         if: ${{ github.event.inputs.version != 'none' }}
         run: |
+          # Save NPM_TOKEN to .npmrc:
+          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
+
+          # Increment package version:
           npm version ${{ github.event.inputs.version }}
 
       # Replace GitHub links to individual packages with npm links:
