@@ -38,12 +38,12 @@ C -->|bundle| D[esm];
 C -->|bundle| E[deno];
 C -->|bundle| F[umd];
 
-click A href "https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/zero-to"
-click B href "https://github.com/stdlib-js/array-base-zero-to/tree/main"
-click C href "https://github.com/stdlib-js/array-base-zero-to/tree/production"
-click D href "https://github.com/stdlib-js/array-base-zero-to/tree/esm"
-click E href "https://github.com/stdlib-js/array-base-zero-to/tree/deno"
-click F href "https://github.com/stdlib-js/array-base-zero-to/tree/umd"
+%% click A href "https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/zero-to"
+%% click B href "https://github.com/stdlib-js/array-base-zero-to/tree/main"
+%% click C href "https://github.com/stdlib-js/array-base-zero-to/tree/production"
+%% click D href "https://github.com/stdlib-js/array-base-zero-to/tree/esm"
+%% click E href "https://github.com/stdlib-js/array-base-zero-to/tree/deno"
+%% click F href "https://github.com/stdlib-js/array-base-zero-to/tree/umd"
 ```
 
 [stdlib-url]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/array/base/zero-to
