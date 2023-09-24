@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import zeroTo from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zero-to@esm/index.mjs';
+import zeroTo from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zero-to@v0.1.0-esm/index.mjs';
 ```
 
 #### zeroTo( n )
@@ -96,7 +96,7 @@ var arr = zeroTo( 5.1 );
 import sort2hp from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-gsort2hp@esm/index.mjs';
 import filledBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-filled-by@esm/index.mjs';
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
-import zeroTo from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zero-to@esm/index.mjs';
+import zeroTo from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zero-to@v0.1.0-esm/index.mjs';
 
 // Generate an array of random numbers:
 var x = filledBy( 10, randu );
