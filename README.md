@@ -35,30 +35,14 @@ limitations under the License.
 
 > Generate a linearly spaced numeric array whose elements increment by 1 starting from zero.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/array-base-zero-to
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var zeroTo = require( '@stdlib/array-base-zero-to' );
+import zeroTo from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zero-to@deno/mod.js';
 ```
 
 #### zeroTo( n )
@@ -104,10 +88,10 @@ var arr = zeroTo( 5.1 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var sort2hp = require( '@stdlib/blas-ext-base-gsort2hp' );
-var filledBy = require( '@stdlib/array-base-filled-by' );
-var randu = require( '@stdlib/random-base-randu' );
-var zeroTo = require( '@stdlib/array-base-zero-to' );
+import sort2hp from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-gsort2hp@deno/mod.js';
+import filledBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-filled-by@deno/mod.js';
+import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
+import zeroTo from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zero-to@deno/mod.js';
 
 // Generate an array of random numbers:
 var x = filledBy( 10, randu );
@@ -146,7 +130,7 @@ console.log( idx );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
