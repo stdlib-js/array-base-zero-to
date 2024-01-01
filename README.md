@@ -35,38 +35,30 @@ limitations under the License.
 
 > Generate a linearly spaced numeric array whose elements increment by 1 starting from zero.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array-base-zero-to
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-zeroTo = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zero-to@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var zeroTo = require( 'path/to/vendor/umd/array-base-zero-to/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zero-to@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.zeroTo;
-})();
-</script>
+var zeroTo = require( '@stdlib/array-base-zero-to' );
 ```
 
 #### zeroTo( n )
@@ -111,16 +103,11 @@ var arr = zeroTo( 5.1 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-gsort2hp@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-filled-by@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zero-to@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var sort2hp = require( '@stdlib/blas-ext-base-gsort2hp' );
+var filledBy = require( '@stdlib/array-base-filled-by' );
+var randu = require( '@stdlib/random-base-randu' );
+var zeroTo = require( '@stdlib/array-base-zero-to' );
 
 // Generate an array of random numbers:
 var x = filledBy( 10, randu );
@@ -136,11 +123,6 @@ sort2hp( x.length, 1, tmp, 1, idx, 1 );
 
 console.log( x );
 console.log( idx );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -181,7 +163,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
