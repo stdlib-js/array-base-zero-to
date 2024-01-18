@@ -36,10 +36,27 @@
   "bugs": {
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@stdlib/array-base-arraylike2object": "^0.1.0",
+    "@stdlib/array-base-assert-is-complex128array": "^0.1.0",
+    "@stdlib/array-base-assert-is-complex64array": "^0.1.0",
+    "@stdlib/strided-base-reinterpret-complex128": "^0.1.1",
+    "@stdlib/strided-base-reinterpret-complex64": "^0.1.1",
+    "@stdlib/types": "^0.2.0",
+    "@stdlib/utils-define-nonenumerable-read-only-property": "^0.1.1"
+  },
   "devDependencies": {
     "@stdlib/array-base-filled-by": "^0.1.0",
+    "@stdlib/array-base-to-accessor-array": "^0.1.0",
+    "@stdlib/array-base-zeros": "^0.1.1",
+    "@stdlib/array-complex128": "^0.1.0",
+    "@stdlib/array-complex64": "^0.1.0",
+    "@stdlib/array-float64": "^0.1.1",
+    "@stdlib/assert-has-own-property": "^0.1.1",
     "@stdlib/assert-is-array": "^0.1.1",
+    "@stdlib/assert-is-same-complex128array": "github:stdlib-js/assert-is-same-complex128array#main",
+    "@stdlib/assert-is-same-complex64array": "github:stdlib-js/assert-is-same-complex64array#main",
+    "@stdlib/assert-is-same-float64array": "github:stdlib-js/assert-is-same-float64array#main",
     "@stdlib/blas-ext-base-gsort2hp": "^0.1.0",
     "@stdlib/math-base-special-pow": "^0.1.0",
     "@stdlib/random-base-randu": "^0.1.0",
