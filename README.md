@@ -149,6 +149,12 @@ console.log( idx );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/array-base/one-to`][@stdlib/array/base/one-to]</span><span class="delimiter">: </span><span class="description">generate a linearly spaced numeric array whose elements increment by 1 starting from one.</span>
+
 </section>
 
 <!-- /.related -->
@@ -224,6 +230,12 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [branches-url]: https://github.com/stdlib-js/array-base-zero-to/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/array-base-zero-to/main/LICENSE
+
+<!-- <related-links> -->
+
+[@stdlib/array/base/one-to]: https://github.com/stdlib-js/array-base-one-to
+
+<!-- </related-links> -->
 
 </section>
 
